@@ -341,9 +341,6 @@ export default function LandingPage({ onEnterApp }) {
                     <span className="lp-testimonial-role">{testimonials[0].role}</span>
                   </div>
                 </div>
-                <div className="lp-testimonial-avatar">
-                  <div className="lp-testimonial-avatar-initials">SC</div>
-                </div>
               </div>
             </FadeIn>
           </div>
@@ -416,7 +413,7 @@ export default function LandingPage({ onEnterApp }) {
         <section id="benefits" className={`lp-benefits ${isMobile ? '' : 'lp-slide'}`}>
           <FadeIn>
             <div className="lp-benefit-card">
-              <div className="lp-benefit-content">
+              <div className="lp-benefit-content" style={{ maxWidth: '100%' }}>
                 <span className="lp-benefit-label">✦ AI-Native</span>
                 <h3 className="lp-heading-lg" style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)' }}>
                   AI that actually <em>works.</em>
@@ -428,11 +425,6 @@ export default function LandingPage({ onEnterApp }) {
                 <button className="lp-btn-primary" style={{ width: 'fit-content' }} onClick={onEnterApp}>
                   See it in action →
                 </button>
-              </div>
-              <div className="lp-benefit-visual">
-                <div className="lp-benefit-visual-inner">
-                  <Brain size={64} style={{ color: 'var(--lp-accent)' }} />
-                </div>
               </div>
             </div>
           </FadeIn>
@@ -451,9 +443,6 @@ export default function LandingPage({ onEnterApp }) {
                   <span className="lp-testimonial-name">{testimonials[1].name}</span>
                   <span className="lp-testimonial-role">{testimonials[1].role}</span>
                 </div>
-              </div>
-              <div className="lp-testimonial-avatar">
-                <div className="lp-testimonial-avatar-initials">MR</div>
               </div>
             </div>
           </FadeIn>
